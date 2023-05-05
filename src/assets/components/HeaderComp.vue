@@ -1,14 +1,15 @@
 <script>
 
 export default {
-  name: 'HeaderComp'
+  name: 'HeaderComp',
+  props: ['titleProps']
 }
 
 </script>
 
 <template>
     <div>
-        
+        <h1>{{ titleProps }}</h1>
     </div>
 </template>
 

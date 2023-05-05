@@ -1,6 +1,6 @@
 <script >
 
-import headerComp from './components/HeaderComp.vue'
+import headerComp from '../src/assets/components/HeaderComp.vue'
 
 export default{
   name: 'app',
@@ -12,7 +12,7 @@ export default{
 </script>
 
 <template>
-  <headerComp/>
+  <headerCom :titleProps=" 'Yu-Gi-Oh Api' "/>
 </template>
 
 <style lang="scss">
