@@ -1,7 +1,18 @@
 <script>
+import { store } from '../../store';
+
+import SingleCard from './SingleCard.vue';
 
 export default {
-    name: 'CardsCollection'
+    name: 'CardsCollection',
+    components: {
+        SingleCard
+    },
+    data(){
+        return{
+            store
+        }
+    }
 }
 </script>
 
