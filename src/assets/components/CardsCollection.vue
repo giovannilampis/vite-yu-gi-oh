@@ -18,7 +18,10 @@ export default {
 
 <template>
     <div>
-        
+        <SingleCard 
+            v-for="(element, index) in store.arrayCards" 
+            :key="index"
+            :cardDetails="element"/>
     </div>
 </template>
 

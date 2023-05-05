@@ -36,7 +36,7 @@ export default{
 </script>
 
 <template>
-<HeaderComp :titleProps="'ci'+'anso'"/>  
+<HeaderComp :titleProps="'Yu-Gi-Oh API project'"/>  
 
   <main>
     <CardsCollection /> 
