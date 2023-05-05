@@ -11,12 +11,24 @@ export default{
     HeaderComp,
     CardsCollection
   },
+  data() {
+    return{
+
+    }
+  },
   created() {
-    axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=10&offset=3')
-    .then(response =>{
+    this.callApi()
+  },
+  methods: {
+    callApi(){
+        axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=10&offset=3')
+      .then( (response) =>{
+
+      console.log(response.data.data)
       this.carte = response.data.data;
     })
-},
+    }
+  },
 }
 
 
