@@ -1,18 +1,35 @@
 <script >
 
-import headerComp from '../src/assets/components/HeaderComp.vue'
+import HeaderComp from '../src/assets/components/HeaderComp.vue'
+import CardsCollection from '../src/assets/components/CardsCollection.vue'
+
+import axios from 'axios';
 
 export default{
   name: 'app',
   components: {
-    headerComp
-  }
+    HeaderComp,
+    CardsCollection
+  },
+  created() {
+    axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=10&offset=3')
+    .then(response =>{
+      this.carte = response.data.data;
+    })
+},
 }
+
 
 </script>
 
 <template>
-  <headerCom :titleProps=" 'Yu-Gi-Oh Api' "/>
+<HeaderComp :titleProps="'ci'+'anso'"/>  
+
+  <main>
+    <CardsCollection /> 
+  </main>
+
+
 </template>
 
 <style lang="scss">
