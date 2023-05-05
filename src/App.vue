@@ -1,9 +1,18 @@
 <script >
 
+import headerComp from './components/HeaderComp.vue'
+
+export default{
+  name: 'app',
+  components: {
+    headerComp
+  }
+}
+
 </script>
 
 <template>
-  <h1>Ciao mondo</h1>
+  <headerComp/>
 </template>
 
 <style lang="scss">
