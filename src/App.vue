@@ -2,8 +2,8 @@
 
 import HeaderComp from '../src/assets/components/HeaderComp.vue'
 import CardsCollection from '../src/assets/components/CardsCollection.vue'
-
 import axios from 'axios';
+import {store} from './store'
 
 export default{
   name: 'app',
@@ -13,7 +13,7 @@ export default{
   },
   data() {
     return{
-
+      store
     }
   },
   created() {
