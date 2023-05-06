@@ -20,8 +20,14 @@ export default {
 
 <style lang="scss" scoped>
 
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
     .my-card {
         background-color: rgba(212, 143, 56, 1);
+        margin-bottom: 1rem;
 
     }
 

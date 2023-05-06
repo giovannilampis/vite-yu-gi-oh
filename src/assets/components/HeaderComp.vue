@@ -13,7 +13,7 @@ export default {
 
         <div class="container">
 
-            <div class="d-flex">
+            <div class="my-2 d-flex justify-content-start align-items-center">
                 
                 <div class="logo-container">
 
@@ -32,6 +32,12 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
     mark {
         background-color: rgb(200, 204, 228);
