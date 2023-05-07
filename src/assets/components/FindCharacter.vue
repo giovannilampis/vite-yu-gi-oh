@@ -6,27 +6,27 @@ export default {
 </script>
 
 <template>
-    <form class="form-inline">
-        <label class="sr-only" for="inlineFormInputName2">Name</label>
-        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
 
-        <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
-        <div class="input-group mb-2 mr-sm-2">
-            <div class="input-group-prepend">
-            <div class="input-group-text">@</div>
+    <form class="form-inline row">
+
+        <div class="col-12 col-md-4">
+            <label class="sr-only" for="inlineFormInputName2">Name</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Search a card">
+        </div>
+
+        <div class="col-12 col-md-4">
+            <label class="sr-only" for="card-name">Card Name</label>
+            <div class="input-group mb-2 mr-sm-2">
+                <input type="text" class="form-control" id="card-name" placeholder="Username">
             </div>
-            <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
         </div>
 
-        <div class="form-check mb-2 mr-sm-2">
-            <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-            <label class="form-check-label" for="inlineFormCheck">
-            Remember me
-            </label>
+        <div class="col-12 col-md-4">
+             <button type="submit" class="btn btn-primary mb-2">Submit</button>
         </div>
 
-        <button type="submit" class="btn btn-primary mb-2">Submit</button>
     </form>
+
 </template>
 
 <style lang="scss" scoped>
