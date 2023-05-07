@@ -1,13 +1,14 @@
 <script>
 export default {
     name: 'FoundCardsNumber',
+    props: ['cardsNumber']
 }
 
 </script>
 
 <template>
     <div class="container-found-cards">
-        <h3>Numero dei personaggi trovati: </h3>
+        <h4>Numero dei personaggi trovati: {{ cardsNumber }} </h4>
     </div>
 </template>
 
@@ -17,7 +18,13 @@ export default {
         width: 80%;
         margin: 0 auto;
         background-color: rgba(33, 37, 41, 1);
-        height: 3rem;
+        color: white;
+        height: 4rem;
+    }
+
+    h4 {
+        line-height: 4rem;
+        padding-left: 3rem;
     }
 
 </style>

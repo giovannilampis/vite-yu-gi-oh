@@ -39,7 +39,7 @@ export default{
 
   <main>
 
-    <FoundCardsNumber/>
+    <FoundCardsNumber :cardsNumber="store.arrayCards.length"/>
 
     <CardsCollection /> 
 
