@@ -8,7 +8,7 @@ export default {
 
 <template>
     <div class="container-found-cards">
-        <h4>Numero dei personaggi trovati: {{ cardsNumber }} </h4>
+        <h4>Numero delle carte trovate: {{ cardsNumber }} </h4>
     </div>
 </template>
 
