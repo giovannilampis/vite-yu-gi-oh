@@ -4,11 +4,14 @@ import {store} from './store'
 import HeaderComp from '../src/assets/components/HeaderComp.vue'
 import FoundCardsNumber from '../src/assets/components/FoundCardsNumber.vue'
 import CardsCollection from '../src/assets/components/CardsCollection.vue'
+import FindCharacter from '../src/assets/components/FindCharacter.vue'
+
 
 export default{
   name: 'app',
   components: {
     HeaderComp,
+    FindCharacter,
     FoundCardsNumber,
     CardsCollection
   },
@@ -35,7 +38,10 @@ export default{
 </script>
 
 <template>
-<HeaderComp :titleProps="'Yu-Gi-Oh API project'"/>  
+
+  <HeaderComp :titleProps="'Yu-Gi-Oh API project'"/> 
+  
+  <FindCharacter/>
 
   <main>
 
