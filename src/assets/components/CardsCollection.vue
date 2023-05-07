@@ -20,21 +20,17 @@ export default {
 
     <section>
 
-        <div class="container">
+        <div class="container-white">
 
-            <div class="container-white row">
-
-                <div class="found-cards">
-
-
-                </div>
+            <div class="cards-container row">
 
                 <SingleCard 
-                    v-for="(element, index) in store.arrayCards" 
-                    :key="index"
-                    :cardDetails="element"/>
+                v-for="(element, index) in store.arrayCards" 
+                :key="index"
+                :cardDetails="element"/>
 
             </div>
+
         </div>
 
     </section>
@@ -48,24 +44,15 @@ export default {
             padding: 0;
             box-sizing: border-box;
         }
-
-    section {
-        background-color: rgba(212, 143, 56, 1);
-        padding: 5rem 0;
-    }
-
-    .container {
-        width: 80%;
-    }
-
-    .found-cards {
-        background-color: rgba(33, 37, 41, 1);
-        height: 3rem;
-    }
-
     .container-white {
+        width: 80%;
         background-color: white;
-        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .cards-container {
+        width: 95%;
+        margin: 0 auto;
     }
 
 </style>

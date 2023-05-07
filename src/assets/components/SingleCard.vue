@@ -8,7 +8,7 @@ export default {
 
 <template>
 
-    <div class="my-card d-flex flex-column justify-content-center align-items-center mx-4 col-12 col-md-4 col-lg-2">
+    <div class="my-card col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-center align-items-center">
 
         <img :src="cardDetails.card_images[0].image_url_small" :alt="cardDetails.name">
         <p><b class="text-white">{{ cardDetails.name }}</b></p>
@@ -32,6 +32,7 @@ export default {
     .my-card {
         background-color: rgba(212, 143, 56, 1);
         margin-bottom: 1rem;
+        margin-right: 2rem;
     }
 
 </style>

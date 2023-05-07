@@ -1,14 +1,15 @@
 <script >
-
-import HeaderComp from '../src/assets/components/HeaderComp.vue'
-import CardsCollection from '../src/assets/components/CardsCollection.vue'
 import axios from 'axios';
 import {store} from './store'
+import HeaderComp from '../src/assets/components/HeaderComp.vue'
+import FoundCardsNumber from '../src/assets/components/FoundCardsNumber.vue'
+import CardsCollection from '../src/assets/components/CardsCollection.vue'
 
 export default{
   name: 'app',
   components: {
     HeaderComp,
+    FoundCardsNumber,
     CardsCollection
   },
   data() {
@@ -21,7 +22,7 @@ export default{
   },
   methods: {
     callApi(){
-        axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=10&offset=3').then( (response) =>{
+        axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=3').then( (response) =>{
       
       const apiData = response.data.data;
       // console.log(response.data.data)
@@ -37,7 +38,11 @@ export default{
 <HeaderComp :titleProps="'Yu-Gi-Oh API project'"/>  
 
   <main>
+
+    <FoundCardsNumber/>
+
     <CardsCollection /> 
+
   </main>
 
 
@@ -46,5 +51,10 @@ export default{
 <style lang="scss">
 
     @use './style/main.scss';
+
+    main {
+      background-color: rgba(212, 143, 56, 1);
+      padding: 4rem 6rem;
+    }
 
 </style>
