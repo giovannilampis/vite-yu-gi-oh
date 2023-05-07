@@ -11,7 +11,7 @@ export default {
 
     <header>
 
-        <div class="container">
+        <div class="header-container">
 
             <div class="my-2 d-flex justify-content-start align-items-center">
                 
@@ -37,6 +37,11 @@ export default {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+
+    .header-container {
+        width: 80%;
+        margin: 0 auto;
     }
 
     mark {

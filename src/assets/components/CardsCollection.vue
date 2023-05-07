@@ -22,7 +22,7 @@ export default {
 
         <div class="container-white">
 
-            <div class="cards-container row">
+            <div class="cards-container row justify-content-center">
 
                 <SingleCard 
                 v-for="(element, index) in store.arrayCards" 
@@ -53,6 +53,7 @@ export default {
     .cards-container {
         width: 95%;
         margin: 0 auto;
+        padding-top: 3rem;
     }
 
 </style>
