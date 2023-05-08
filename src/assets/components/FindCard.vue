@@ -20,7 +20,7 @@ export default {
         <input type="text" placeholder="Ricerca carta" 
         v-model="store.textSearch">
 
-        <button type="submit" @click.prevent="">Cerca</button>
+        <button type="submit" @click.prevent="$emit('nameEmit')">Cerca</button>
 
     </div>
 
