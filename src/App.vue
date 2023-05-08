@@ -25,12 +25,12 @@ export default{
   },
   methods: {
     callApi(){
-        axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=3').then( (response) =>{
+      //   axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=3').then( (response) =>{
       
-      const apiData = response.data.data;
+      // const apiData = response.data.data;
       // console.log(response.data.data)
-      this.store.arrayCards = apiData;
-    })
+    //   this.store.arrayCards = apiData;
+    // })
     }
   },
 }
