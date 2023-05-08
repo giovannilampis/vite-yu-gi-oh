@@ -20,6 +20,8 @@ export default {
         <input type="text" placeholder="Ricerca carta" 
         v-model="store.textSearch">
 
+        <button type="submit" @click.prevent="">Cerca</button>
+
     </div>
 
 </template>
