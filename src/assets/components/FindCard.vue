@@ -17,7 +17,8 @@ export default {
 
     <div>
 
-        <input type="text" placeholder="Ricerca carta" v-model="textSearch">
+        <input type="text" placeholder="Ricerca carta" 
+        v-model="store.textSearch">
 
     </div>
 
