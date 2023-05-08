@@ -4,14 +4,14 @@ import {store} from './store'
 import HeaderComp from '../src/assets/components/HeaderComp.vue'
 import FoundCardsNumber from '../src/assets/components/FoundCardsNumber.vue'
 import CardsCollection from '../src/assets/components/CardsCollection.vue'
-import FindCharacter from '../src/assets/components/FindCharacter.vue'
+import FindCard from '../src/assets/components/FindCard.vue'
 
 
 export default{
   name: 'app',
   components: {
     HeaderComp,
-    FindCharacter,
+    FindCard,
     FoundCardsNumber,
     CardsCollection
   },
