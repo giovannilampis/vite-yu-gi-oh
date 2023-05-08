@@ -65,11 +65,11 @@ export default{
 
   <main>
 
-    <FindCard/>
+    <FindCard  @nameEmit="callApi"/>
 
     <FoundCardsNumber :cardsNumber="store.arrayCards.length"/>
 
-    <CardsCollection @nameEmit="callApi"/> 
+    <CardsCollection/> 
 
   </main>
 
