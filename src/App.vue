@@ -40,10 +40,10 @@ export default{
 <template>
 
   <HeaderComp :titleProps="'Yu-Gi-Oh API project'"/> 
-  
-  <FindCharacter/>
 
   <main>
+
+    <FindCard/>
 
     <FoundCardsNumber :cardsNumber="store.arrayCards.length"/>
 
