@@ -26,10 +26,10 @@ export default{
   methods: {
     callApi(){
 
-      if( store.textSearch !== '' ){
+      if( this.store.textSearch !== '' ){
 
                   // modify callApi method
-          axios.get(`https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=3?name=${store.textSearch}`).then( (response) =>{
+          axios.get(`https://db.ygoprodeck.com/api/v7/cardinfo.php?name=${this.store.textSearch}`).then( (response) =>{
 
           const apiData = response.data.data;
 
@@ -37,11 +37,11 @@ export default{
 
           this.store.arrayCards = apiData;
 
-        } )
+          } )
 
       } else{
 
-          axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=3').then( (response) =>{
+          axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0').then( (response) =>{
       
           const apiData = response.data.data;
 
@@ -49,7 +49,7 @@ export default{
 
           this.store.arrayCards = apiData;
 
-        })
+          })
 
       }
     
