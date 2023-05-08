@@ -33,7 +33,7 @@ export default{
     // })
 
     // modify callApi method
-    axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=3?name')
+    axios.get(`https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=3?name=${store.textSearch}`)
     }
   },
 }
