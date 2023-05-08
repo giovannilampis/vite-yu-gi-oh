@@ -47,7 +47,7 @@ export default{
 
     <FoundCardsNumber :cardsNumber="store.arrayCards.length"/>
 
-    <CardsCollection /> 
+    <CardsCollection @nameEmit="callApi"/> 
 
   </main>
 
