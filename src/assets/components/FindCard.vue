@@ -1,6 +1,14 @@
 <script>
+
+import {store} from '../../store'
+
 export default {
-    name: 'FindCard'
+    name: 'FindCard',
+    data() {
+        return {
+            store
+        }
+    },
 }
 
 </script>
