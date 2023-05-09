@@ -5,6 +5,8 @@ import HeaderComp from '../src/assets/components/HeaderComp.vue'
 import FoundCardsNumber from '../src/assets/components/FoundCardsNumber.vue'
 import CardsCollection from '../src/assets/components/CardsCollection.vue'
 import FindCard from '../src/assets/components/FindCard.vue'
+import SelectArchetype from '../src/assets/components/SelectArchetype.vue'
+
 
 
 export default{
@@ -12,6 +14,7 @@ export default{
   components: {
     HeaderComp,
     FindCard,
+    SelectArchetype,
     FoundCardsNumber,
     CardsCollection
   },
@@ -19,6 +22,11 @@ export default{
     return{
       store
     }
+  },
+  computed: {
+
+
+
   },
   created() {
     this.callApi()
@@ -68,6 +76,8 @@ export default{
   <main>
 
     <FindCard  @nameEmit="callApi"/>
+
+    <SelectArchetype/>
 
     <FoundCardsNumber :cardsNumber="store.arrayCards.length"/>
 
