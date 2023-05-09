@@ -37,6 +37,8 @@ export default{
 
           this.store.arrayCards = apiData;
 
+          this.store.textSearch = ''
+
           } )
 
       } else{
