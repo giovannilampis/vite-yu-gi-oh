@@ -20,7 +20,8 @@ export default{
   },
   data() {
     return{
-      store
+      store,
+      selectedArchetype: 'selectedArchetype'
     }
   },
   computed: {
@@ -77,7 +78,7 @@ export default{
 
     <FindCard  @nameEmit="callApi"/>
 
-    <SelectArchetype/>
+    <SelectArchetype :selectedArchetype = ""/>
 
     <FoundCardsNumber :cardsNumber="store.arrayCards.length"/>
 
