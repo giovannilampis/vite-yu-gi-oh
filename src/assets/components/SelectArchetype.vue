@@ -5,7 +5,10 @@ export default {
     data() {
         return {
             archetypeOptions: [
-                
+                'Alien',
+                'Noble Knight',
+                'Melodious',
+                'Archfiend'
             ]
         }
     },
