@@ -9,7 +9,8 @@ export default {
                 'Noble Knight',
                 'Melodious',
                 'Archfiend'
-            ]
+            ],
+            select: ''
         }
     },
     props: ['selectedArchetype']
@@ -20,7 +21,7 @@ export default {
 <template>
     <div>
 
-        <select name="" id="">
+        <select name="" id="selectedArchetype" v-model="select">
 
             <option selected value="">Scegli l'archetipo</option>
             <option v-for="(element, index) in archetypeOptions" :key="index" :value="element">{{ element }}</option>
