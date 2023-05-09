@@ -1,7 +1,14 @@
 <script>
 
 export default {
-    name: 'SelectArchetype'
+    name: 'SelectArchetype',
+    data() {
+        return {
+            archetypeOptions: [
+                
+            ]
+        }
+    },
 }
 
 </script>
