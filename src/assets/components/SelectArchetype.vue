@@ -13,7 +13,12 @@ export default {
             select: ''
         }
     },
-    props: ['selectedArchetype']
+    // props: ['selectedArchetype']
+    methods: {
+        selected() {
+            console.log(this.select)
+        }
+    }
 }
 
 </script>

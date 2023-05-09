@@ -78,7 +78,7 @@ export default{
 
     <FindCard  @nameEmit="callApi"/>
 
-    <SelectArchetype :selectedArchetype = ""/>
+    <SelectArchetype/>
 
     <FoundCardsNumber :cardsNumber="store.arrayCards.length"/>
 
