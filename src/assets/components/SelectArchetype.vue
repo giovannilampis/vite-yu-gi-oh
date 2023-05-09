@@ -21,7 +21,7 @@ export default {
 <template>
     <div>
 
-        <select name="" id="selectedArchetype" v-model="select">
+        <select name="" id="selectedArchetype" v-model="select" @change="selected">
 
             <option selected value="">Scegli l'archetipo</option>
             <option v-for="(element, index) in archetypeOptions" :key="index" :value="element">{{ element }}</option>
